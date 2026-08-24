@@ -30,7 +30,8 @@ body {
 }
 
 .profile-card {
-  width: min(100%, 327px);
+  width: 327px;
+  min-height: 579px;
   padding: 24px;
   text-align: center;
   background: var(--grey-800);
@@ -109,6 +110,10 @@ nav a:focus-visible {
 @media (max-height: 650px) {
   body {
     padding-block: 16px 40px;
+  }
+
+  .profile-card {
+    min-height: auto;
   }
 
   .attribution {
